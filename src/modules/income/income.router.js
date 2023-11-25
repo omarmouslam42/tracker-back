@@ -7,7 +7,7 @@ import * as val from "./income.validation.js";
 const router = Router()
 router.post("/addIncome",validation(val.incomeVal),addIncome)
 
-router.get("/incomes",getIncomes)
+router.get("/",getIncomes)
 
 router.delete("/deleteIncome/:id",validation(val.DeleteIncomeVal),deleteIncome)
 

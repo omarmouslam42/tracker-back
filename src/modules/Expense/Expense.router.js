@@ -8,7 +8,7 @@ import { validation } from "../../middleware/validation.js";
 const router = Router()
 router.post("/addExpense", validation(val.ExpenseVal),addExpense)
 
-router.get("/Expenses",getExpenses)
+router.get("/",getExpenses)
 
 router.delete("/deleteExpense/:id",validation(val.DeleteExpenseVal), deleteExpense)
 

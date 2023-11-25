@@ -12,7 +12,7 @@ export const getIncomes=asyncHandler((async(req,res,next)=>{
 }))
 
 export const deleteIncome =asyncHandler((async(req,res,next)=>{
-    const {id}=req.params
+    const {id}=req.params 
     const income= await incomeModel.findByIdAndDelete(id)
     if (income) {
         return res.status(200).json({message:"done",income}) 

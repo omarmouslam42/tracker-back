@@ -8,7 +8,7 @@ import { globalErrorHandling } from './utils/errorHandling.js'
 const initApp = (app, express) => {
     app.use(express.json())
     app.get("/", (req, res, next) => {
-        return res.status(200).json({message:"Welcome to Blog App"})
+        return res.status(200).json({message:"Welcome to tracker App"})
     })  
     // app.use(`/auth`, authRouter)
     app.use(`/income`, incomeRouter) 

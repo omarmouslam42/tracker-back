@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000
 const app = express()
 app.use(cors())
 
-app.set("case sensitive routing", true)
+// app.set("case sensitive routing", true)
 initApp(app ,express)
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

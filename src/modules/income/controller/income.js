@@ -16,5 +16,5 @@ export const deleteIncome =asyncHandler((async(req,res,next)=>{
     const income= await incomeModel.findByIdAndDelete(id)
     if (income) {
         return res.status(200).json({message:"done",income}) 
-    }
+    } 
  }))
